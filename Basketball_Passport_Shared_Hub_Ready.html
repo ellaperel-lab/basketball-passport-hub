@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#142b4a">
+<title>Basketball Passport | Project Hub</title>
+<style>
+:root{--navy:#142b4a;--blue:#5ca9e6;--pale:#eaf6ff;--ink:#182d45;--muted:#66778a;--line:#dce6ef;--bg:#f4f8fc;--white:#fff;--green:#e0f3e9;--gold:#fff1d6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:980px;margin:auto;padding:16px 13px calc(35px + env(safe-area-inset-bottom))}.hero{background:linear-gradient(135deg,#142b4a,#275780);color:white;border-radius:23px;padding:21px;box-shadow:0 10px 28px #142b4a16}.brand{display:flex;align-items:center;gap:12px}.logo{width:52px;height:52px;border-radius:16px;background:#ffffff18;display:grid;place-items:center;font-size:26px}.eyebrow{font-size:11px;color:#b9d5ef;letter-spacing:.08em}.hero h1{font-size:clamp(22px,5vw,30px);margin:4px 0}.hero p{margin:4px 0;color:#d5e8f8;font-size:13px}.heroGrid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:22px}.pctrow{display:flex;align-items:end;justify-content:space-between;gap:10px}.pct{font-size:35px;font-weight:800;line-height:1.1}.track{height:9px;background:#ffffff2b;border-radius:99px;overflow:hidden;margin-top:10px}.track>div{height:100%;background:#8ed0ff;width:0;transition:width .2s}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{border:1px solid #ffffff30;border-radius:14px;padding:10px}.stat strong{font-size:21px;display:block}.stat span{font-size:11px;color:#d5e8f8}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.field{border:1px solid var(--line);border-radius:12px;background:white;padding:12px;color:var(--ink);min-width:0;width:100%}.search{flex:1;min-width:140px}.btn{border:0;border-radius:12px;padding:12px 14px;background:var(--navy);color:white;font-weight:700}.btn.light{background:white;color:var(--navy);border:1px solid var(--line)}.btn.blue{background:var(--blue);color:#09223b}.btn.danger{background:#fff0f0;color:#a22}.tabs{display:flex;gap:7px;overflow:auto;padding:0 0 5px;margin-bottom:13px}.tab{white-space:nowrap;border:1px solid var(--line);background:white;border-radius:999px;padding:10px 13px;color:var(--ink);font-size:13px}.tab.active{background:var(--navy);color:white;border-color:var(--navy)}.layout{display:grid;grid-template-columns:1fr;gap:13px}.panel{background:white;border:1px solid var(--line);border-radius:17px;padding:15px;min-width:0}.panel h2{margin:0 0 4px;font-size:18px}.sub{color:var(--muted);font-size:12px;margin:0 0 12px}.group{border:1px solid var(--line);border-radius:14px;margin:9px 0;overflow:hidden}.groupHead{display:flex;align-items:center;gap:10px;padding:12px;background:#fbfdff;cursor:pointer}.groupIcon{width:36px;height:36px;display:grid;place-items:center;background:var(--pale);border-radius:11px;font-size:18px;flex-shrink:0}.groupName{font-weight:800;flex:1;font-size:14px}.groupCount{font-size:11px;color:var(--muted);white-space:nowrap}.chev{color:var(--muted)}.task{display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;align-items:start;padding:13px;border-top:1px solid #edf2f7}.task input[type=checkbox]{width:21px;height:21px;accent-color:var(--navy);margin:1px 0 0}.taskTitle{font-size:14px;font-weight:700;line-height:1.4}.task.done .taskTitle{text-decoration:line-through;color:#7a8998}.taskDesc{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.45}.taskMeta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:8px}.pill{font-size:10px;border-radius:999px;padding:4px 8px;background:#edf4fa;color:#42617e}.pill.done{background:var(--green);color:#246347}.noteBtn{border:1px solid var(--line);background:white;color:#34516c;border-radius:9px;padding:6px 9px;font-size:11px}.noteArea{margin-top:9px;display:none}.noteArea.open{display:block}.noteArea textarea{min-height:65px;resize:vertical;font-size:13px}.empty{color:var(--muted);font-size:13px;padding:18px 6px;text-align:center}.formgrid{display:grid;gap:9px}.historyItem{padding:12px 0;border-top:1px solid #edf2f7}.historyItem:first-child{border-top:0}.historyDate{font-size:11px;color:var(--muted)}.historyTitle{font-weight:800;font-size:14px;margin:4px 0}.historyBody{font-size:13px;white-space:pre-wrap;line-height:1.5}.rowbtn{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}.foot{font-size:11px;color:var(--muted);text-align:center;margin:18px 4px 0}.toast{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom));left:14px;right:14px;max-width:430px;margin:auto;background:#142b4a;color:white;padding:12px 15px;border-radius:13px;box-shadow:0 8px 25px #0002;display:none;z-index:10;font-size:13px}.toast.show{display:block}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:10px}.small{font-size:12px;color:var(--muted)}@media(min-width:740px){.wrap{padding:25px 20px}.hero{padding:27px}.heroGrid{grid-template-columns:1fr 290px;align-items:end}.layout{grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr)}.stats{grid-template-columns:1fr}.stat{padding:12px}.stat strong{display:inline-block;margin-left:8px}.toolbar{margin:20px 0}.task{padding:14px}.panel{padding:18px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+body:not(.authenticated) .wrap{display:none}.auth-screen{max-width:520px;margin:7vh auto;padding:18px 14px}
+.auth-card{background:white;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 12px 32px #142b4a12}
+.auth-card h1{margin:0 0 8px;color:var(--navy);font-size:25px}
+.auth-card p{color:var(--muted);line-height:1.55;font-size:14px}
+.auth-card .field{margin:6px 0}
+.auth-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.syncbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:10px 12px;border-radius:12px;background:#eaf6ff;color:#244968;font-size:12px}
+
+</style>
+</head>
+<body>
+
+<section class="auth-screen" id="authScreen">
+  <div class="auth-card">
+    <div style="font-size:34px">🏀</div>
+    <h1>Basketball Passport Hub</h1>
+    <p>התחברי כדי לשמור את המשימות, ההערות והמפגשים שלך בענן ולסנכרן אותם בין מכשירים.</p>
+    <div id="connectionSetup" style="background:#f1f7fc;border:1px solid #d7e6f3;border-radius:14px;padding:12px;margin:14px 0;text-align:right">
+      <strong>הגדרת חיבור (פעם אחת בכל מכשיר)</strong>
+      <p class="small">הדביקי כאן את כתובת הפרויקט והמפתח הציבורי מ-Supabase. הפרטים נשמרים בדפדפן הזה בלבד.</p>
+      <label for="configUrl" class="small">Project URL</label>
+      <input class="field" id="configUrl" type="url" placeholder="https://your-project.supabase.co" autocomplete="off">
+      <label for="configKey" class="small">Publishable key</label>
+      <input class="field" id="configKey" type="password" placeholder="sb_publishable_..." autocomplete="off">
+      <button class="btn light" id="saveConfigBtn" type="button">שמירת פרטי החיבור</button>
+    </div>
+    <label for="authEmail" class="small">כתובת אימייל</label>
+    <input class="field" id="authEmail" type="email" autocomplete="email" placeholder="name@example.com" required>
+    <label for="authPassword" class="small">סיסמה</label>
+    <input class="field" id="authPassword" type="password" autocomplete="current-password" minlength="8" placeholder="לפחות 8 תווים" required>
+    <div class="auth-actions">
+      <button class="btn" id="signInBtn">התחברות</button>
+      <button class="btn light" id="signUpBtn">יצירת חשבון</button>
+    </div>
+    <p id="authMessage" role="status" aria-live="polite"></p>
+    <p class="small">המשימות פרטיות לחשבון המחובר. אל תשתפי את הסיסמה שלך.</p>
+  </div>
+</section>
+
+<div class="wrap">
+<header class="hero">
+  <div class="brand"><div class="logo">🏀</div><div><div class="eyebrow">PROJECT HUB · PERSONAL TRACKER</div><h1>Basketball Passport</h1><p>הדרך שלנו מרעיון לפרויקט גמר עובד</p></div></div>
+  <div class="heroGrid">
+    <div><div class="pctrow"><div><div class="eyebrow">ההתקדמות שלך</div><div class="pct" id="percent">0%</div></div><div id="countLabel" style="font-size:12px;color:#d5e8f8">0 מתוך 0 משימות</div></div><div class="track"><div id="progressBar"></div></div></div>
+    <div class="stats"><div class="stat"><strong id="doneCount">0</strong><span>הושלמו</span></div><div class="stat"><strong id="openCount">0</strong><span>לביצוע</span></div><div class="stat"><strong id="sessionCount">0</strong><span>מפגשי עבודה</span></div></div>
+  </div>
+</header>
+<div class="syncbar"><span id="syncStatus">מתחברת לענן…</span><button class="btn light" id="signOutBtn" type="button">התנתקות</button></div>
+<div class="toolbar">
+  <input class="field search" id="search" placeholder="חיפוש משימה או הערה…" aria-label="חיפוש">
+  <select class="field" id="statusFilter" style="width:auto;flex:1"><option value="all">כל הסטטוסים</option><option value="open">לביצוע</option><option value="done">הושלמו</option></select>
+  <button class="btn light" id="exportBtn">ייצוא גיבוי</button>
+  <button class="btn light" id="importBtn">ייבוא</button><input id="importFile" type="file" accept="application/json,.json" hidden>
+</div>
+<nav class="tabs" aria-label="ניווט">
+  <button class="tab active" data-view="tasks">✓ משימות</button>
+  <button class="tab" data-view="sessions">◷ מפגשי עבודה</button>
+  <button class="tab" data-view="next">➜ הצעד הבא</button>
+</nav>
+<div id="tasksView" class="layout">
+  <section class="panel"><div class="sectionhead"><h2>מפת המשימות</h2><span class="small" id="visibleCount"></span></div><p class="sub">סמני משימה רק אחרי שבדקת שהיא באמת הושלמה.</p><div id="taskGroups"></div></section>
+  <aside class="panel"><h2>הערות לפרויקט</h2><p class="sub">מקום לתזכורות כלליות שנשמרות בחשבון שלך בענן.</p><textarea class="field" id="projectNotes" rows="6" placeholder="למשל: איפה עצרנו, החלטות חשובות, שגיאות שצריך לבדוק…"></textarea><p class="small">השמירה מתבצעת אוטומטית בענן לאחר התחברות.</p><div class="rowbtn"><button class="btn light" id="clearNotes">ניקוי הערות</button></div><hr style="border:0;border-top:1px solid var(--line);margin:18px 0"><h2>הכללים שלנו</h2><p class="sub">• מסך מעוצב לא בהכרח עובד.<br>• שומרים על הלוגיקה והניווט הקיימים.<br>• המאמן ללא AI; ה־AI נמצא ב־SeasonTracking.<br>• כרגע מאמן אחד לכל קבוצה.<br>• בדיקות Android יבוצעו כשיהיה מכשיר זמין.</p></aside>
+</div>
+<div id="sessionsView" class="layout" hidden>
+  <section class="panel"><h2>היסטוריית מפגשים</h2><p class="sub">בסוף כל עבודה תיעדי מה עשינו ומה נשאר.</p><div id="historyList"></div></section>
+  <section class="panel"><h2>תיעוד מפגש חדש</h2><p class="sub">אפשר לשמור גם מפגש קצר של כמה דקות.</p><form id="sessionForm" class="formgrid"><input class="field" id="sessionTitle" required maxlength="100" placeholder="כותרת, למשל: עיצוב LoginPage"><input class="field" id="sessionDate" type="date"><textarea class="field" id="sessionDone" rows="3" placeholder="מה עשינו?"></textarea><textarea class="field" id="sessionNext" rows="3" placeholder="מה המשימה הבאה / איפה עצרנו?"></textarea><button class="btn" type="submit">שמירת מפגש</button></form></section>
+</div>
+<div id="nextView" class="layout" hidden>
+  <section class="panel"><h2>הצעד הבא שלנו</h2><p class="sub">משימה ראשונה שלא סומנה כהושלמה לפי סדר העבודה.</p><div id="nextTask"></div></section>
+  <section class="panel"><h2>גיבוי והעברת נתונים</h2><p class="sub">הנתונים נשמרים בענן ומסתנכרנים במכשירים שבהם תתחברי לאותו חשבון.</p><p style="font-size:13px;line-height:1.6">1. לחצי על <b>ייצוא גיבוי</b> כדי להוריד קובץ JSON.<br>2. שמרי אותו במקום בטוח.<br>3. במכשיר החדש פתחי את האתר ולחצי <b>ייבוא</b> כדי לשחזר את המשימות, ההערות והמפגשים.</p><button class="btn" id="exportBtn2">יצירת קובץ גיבוי</button></section>
+</div>
+<div class="foot">Basketball Passport Project Hub · סנכרון ענן לחשבון המחובר</div>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// Replace these two placeholders with the values from your Supabase project.
+let SUPABASE_URL = localStorage.getItem("bph_supabase_url") || "";
+let SUPABASE_PUBLISHABLE_KEY = localStorage.getItem("bph_supabase_publishable_key") || "";
+let supabaseClient = null;
+let cloudReady = false;
+let cloudSaveTimer = null;
+let currentUser = null;
+
+const STORAGE_KEY='basketballPassportHub_v1';
+const groups=[
+{id:'map',name:'מיפוי ובסיס',icon:'🧭',tasks:[
+['map1','מיפוי כל קובצי הפרויקט','לבדוק ב־Solution Explorer את קובצי XAML וקובצי CS.','גבוהה'],
+['map2','מיפוי הניווט בין המסכים','לרשום איך עוברים ממסך למסך ולשמור על הקיים.','גבוהה'],
+['map3','אימות מצב כל מסך','להבדיל בין מסך שקיים בקוד, מסך מעוצב ומסך שעובד בפועל.','גבוהה']]},
+{id:'design',name:'עיצוב ומסכים',icon:'🎨',tasks:[
+['d1','LoginPage / MainPage','עיצוב כחול כהה, תכלת ולבן בלי לשבור ניווט.','גבוהה'],
+['d2','SignUpPage','בדיקת שדות, היררכיה ועיצוב.','גבוהה'],
+['d3','PlayerHome','ברכה, הודעות, נתוני עונה ואירוע קרוב.','גבוהה'],
+['d4','HomeCoach','תמונת מצב קבוצתית ברורה; ללא AI.','גבוהה'],
+['d5','AddGame','הזנת נתוני משחק ועיצוב הטופס.','בינונית'],
+['d6','SavedGames','רשימת משחקים וכניסה לפרטי משחק.','בינונית'],
+['d7','SeasonTracking','סטטיסטיקות ואזור AI בתוך המסך.','גבוהה'],
+['d8','PlayerCalendar','בדיקת יומן השחקן ואירועים.','בינונית'],
+['d9','מסכי הודעות','הודעות מאמן ושחקן, בלי צ׳אט מלא בשלב זה.','גבוהה'],
+['d10','PlayerCoachView','פרטי שחקן, ממוצעים, ניתוח והיסטוריית משחקים.','בינונית'],
+['d11','אחידות עיצובית','Rubik, Karantina, צבעים, RTL וגלילה.','בינונית']]},
+{id:'missing',name:'מסכים ויכולות חסרים',icon:'🧩',tasks:[
+['m1','השלמת פרופיל שחקן','פרטים אישיים, קבוצה ומספר חולצה לפי הצורך.','גבוהה'],
+['m2','TeamDetails למאמן','שם קבוצה, קוד הצטרפות ורשימת שחקנים.','גבוהה'],
+['m3','הצטרפות לקבוצה באמצעות קוד','שחקן מצטרף לקבוצת המאמן.','גבוהה'],
+['m4','אישור קריאת הודעה','השחקן מאשר והמאמן רואה את האישור.','בינונית'],
+['m5','הגדרת היקף ה־AI','ניתוח נתונים/אימונים/תזונה ב־SeasonTracking בלבד.','בינונית']]},
+{id:'backend',name:'לוגיקה ונתונים',icon:'🗄️',tasks:[
+['b1','הגדרת מודלים','משתמש, שחקן, מאמן, קבוצה, משחק, הודעה ואירוע.','גבוהה'],
+['b2','בחירת מסד נתונים','החלטה על תשתית שמתאימה לפרויקט.','גבוהה'],
+['b3','הרשמה והתחברות אמיתיות','Authentication במקום זרימה מדומה.','גבוהה'],
+['b4','יצירת קוד קבוצה ייחודי','המאמן יוצר קוד לשיתוף עם השחקנים.','גבוהה'],
+['b5','שמירת ושליפת משחקים','נתוני משחק אמיתיים ולא נתוני דוגמה.','גבוהה'],
+['b6','חישוב סטטיסטיקות עונה','נקודות, ריבאונדים, אסיסטים ומספר משחקים.','גבוהה'],
+['b7','שמירה ושליפה של הודעות','שליחת הודעות מהמאמן לשחקנים.','גבוהה'],
+['b8','שמירת אירועי יומן','אימונים ומשחקים.','בינונית'],
+['b9','מימוש AI או חלופה מוגדרת','לא להציג המלצות דמה כאילו נוצרו בידי AI.','בינונית']]},
+{id:'test',name:'בדיקות והגשה',icon:'🏁',tasks:[
+['t1','בדיקת כל הכפתורים והניווט','כל פעולה מגיעה למקום הנכון.','גבוהה'],
+['t2','בדיקת הרשאות שחקן ומאמן','כל תפקיד רואה את המסכים שלו.','גבוהה'],
+['t3','מצבי טעינה, ריק ושגיאה','הודעות ברורות כשאין נתונים או כשיש תקלה.','בינונית'],
+['t4','Build תקין','הפרויקט נבנה ללא שגיאות.','גבוהה'],
+['t5','בדיקה על מכשיר Android','כשהמכשיר יהיה זמין.','גבוהה'],
+['t6','תרחיש מלא של שחקן','הרשמה, הצטרפות, משחק וסטטיסטיקה.','גבוהה'],
+['t7','תרחיש מלא של מאמן','קבוצה, שחקנים, משחקים והודעות.','גבוהה'],
+['t8','תיעוד והדגמה','הכנה להצגת פרויקט הגמר.','בינונית']]}
+];
+const allTasks=groups.flatMap(g=>g.tasks.map(t=>({id:t[0],name:t[1],desc:t[2],priority:t[3],group:g.name,groupId:g.id})));
+const $=id=>document.getElementById(id);
+function fresh(){return {completed:[],notes:{},projectNotes:'',sessions:[]}}
+let state=load();
+function load(){try{const s=JSON.parse(localStorage.getItem(STORAGE_KEY));return {...fresh(),...(s||{}),completed:Array.isArray(s?.completed)?s.completed:[],notes:s?.notes||{},sessions:Array.isArray(s?.sessions)?s.sessions:[]}}catch{return fresh()}}
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));updateStats();if(cloudReady&&currentUser){$('syncStatus').textContent='שומרת שינויים בענן…';clearTimeout(cloudSaveTimer);cloudSaveTimer=setTimeout(saveCloudState,500)}}catch(e){toast('לא הצלחנו לשמור בדפדפן. נסי לייצא גיבוי.');}}
+async function saveCloudState(){if(!cloudReady||!currentUser||!supabaseClient)return;const payload={user_id:currentUser.id,state:state,updated_at:new Date().toISOString()};const {error}=await supabaseClient.from('project_state').upsert(payload,{onConflict:'user_id'});if(error){$('syncStatus').textContent='שגיאה בסנכרון הענן';console.error(error);toast('השמירה המקומית הצליחה, אבל הסנכרון נכשל. בדקי חיבור והרשאות.')}else{$('syncStatus').textContent='מסונכרן לענן ✓'}} 
+function setAuthMessage(message,isError=false){const el=$('authMessage');el.textContent=message;el.style.color=isError?'#a22':'#246347'}
+function showAuthenticated(user){currentUser=user;document.body.classList.add('authenticated');$('authScreen').hidden=true;$('syncStatus').textContent='מחברת את החשבון לענן…';}
+async function loadCloudState(){const {data,error}=await supabaseClient.from('project_state').select('state').eq('user_id',currentUser.id).maybeSingle();if(error){$('syncStatus').textContent='לא ניתן לטעון מהענן';console.error(error);toast('התחברות הצליחה, אבל טעינת הנתונים נכשלה. בדקי שהרצת את SQL ההקמה.');return}if(data&&data.state&&typeof data.state==='object'){state={...fresh(),...data.state,completed:Array.isArray(data.state.completed)?data.state.completed:[],notes:data.state.notes||{},sessions:Array.isArray(data.state.sessions)?data.state.sessions:[]};localStorage.setItem(STORAGE_KEY,JSON.stringify(state));$('projectNotes').value=state.projectNotes||'';}else{ // First login: upload this browser's current state, or start with an empty project state.
+  cloudReady=true;
+  await saveCloudState();
+}
+cloudReady=true;renderTasks();updateStats();renderHistory();renderNext();$('syncStatus').textContent='מסונכרן לענן ✓'}
+async function handleAuth(mode){if(!supabaseClient){setAuthMessage('צריך להגדיר תחילה את כתובת Supabase ואת המפתח הציבורי בקובץ האתר.',true);return}const email=$('authEmail').value.trim(),password=$('authPassword').value;if(!email||!password){setAuthMessage('הכניסי כתובת אימייל וסיסמה.',true);return}if(password.length<8){setAuthMessage('בחרי סיסמה באורך 8 תווים לפחות.',true);return}setAuthMessage('רגע, מתחברת…');const result=mode==='signup'?await supabaseClient.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname}}):await supabaseClient.auth.signInWithPassword({email,password});if(result.error){setAuthMessage(result.error.message,true);return}if(mode==='signup'&&!result.data.session){setAuthMessage('נשלח מייל לאימות החשבון. אשרי אותו ואז חזרי לכאן והתחברי.');return}if(result.data.user){showAuthenticated(result.data.user);await loadCloudState()}}
+async function initCloud(){
+  $('configUrl').value=SUPABASE_URL;
+  $('configKey').value=SUPABASE_PUBLISHABLE_KEY;
+  $('saveConfigBtn').addEventListener('click',async()=>{
+    const url=$('configUrl').value.trim().replace(/\\/$/,'');
+    const key=$('configKey').value.trim();
+    if(!/^https:\\/\\/[a-z0-9-]+\\.supabase\\.co$/i.test(url)){setAuthMessage('כתובת Project URL לא נראית תקינה.',true);return}
+    if(!key.startsWith('sb_publishable_')){setAuthMessage('צריך להדביק Publishable key שמתחיל ב-sb_publishable_.',true);return}
+    localStorage.setItem('bph_supabase_url',url);
+    localStorage.setItem('bph_supabase_publishable_key',key);
+    SUPABASE_URL=url;SUPABASE_PUBLISHABLE_KEY=key;
+    setAuthMessage('פרטי החיבור נשמרו במכשיר הזה. בודקת חיבור…');
+    await initializeSupabase();
+  });
+  $('signInBtn').addEventListener('click',()=>handleAuth('signin'));
+  $('signUpBtn').addEventListener('click',()=>handleAuth('signup'));
+  $('signOutBtn').addEventListener('click',async()=>{if(supabaseClient)await supabaseClient.auth.signOut();cloudReady=false;currentUser=null;document.body.classList.remove('authenticated');$('authScreen').hidden=false;$('syncStatus').textContent='התנתקת'});
+  if(SUPABASE_URL&&SUPABASE_PUBLISHABLE_KEY) await initializeSupabase();
+  else $('syncStatus').textContent='יש להגדיר חיבור לענן';
+}
+async function initializeSupabase(){
+  if(!window.supabase){setAuthMessage('לא ניתן לטעון את ספריית Supabase. בדקי חיבור לאינטרנט.',true);return}
+  supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+  const {data:{session},error}=await supabaseClient.auth.getSession();
+  if(error){setAuthMessage('לא הצלחתי לבדוק את החיבור. בדקי את כתובת הפרויקט והמפתח.',true);return}
+  if(session?.user){showAuthenticated(session.user);await loadCloudState()}else{$('syncStatus').textContent='יש להתחבר כדי לסנכרן';setAuthMessage('החיבור הוגדר. עכשיו אפשר להתחבר או ליצור חשבון.')}
+  supabaseClient.auth.onAuthStateChange(async(event,session)=>{if(event==='SIGNED_IN'&&session?.user&&!currentUser){showAuthenticated(session.user);await loadCloudState()}});
+}\n${esc(s.done)}</div>`:''}${s.next?`<div class="historyBody" style="margin-top:8px"><b>המשך:</b>\n${esc(s.next)}</div>`:''}<div class="rowbtn"><button class="noteBtn" data-delete-session="${s.id}">מחיקת מפגש</button></div></div>`).join('');document.querySelectorAll('[data-delete-session]').forEach(b=>b.addEventListener('click',()=>{if(confirm('למחוק את מפגש העבודה הזה?')){state.sessions=state.sessions.filter(s=>s.id!==b.dataset.deleteSession);save();renderHistory();toast('המפגש נמחק')}}))}
+function renderNext(){const t=allTasks.find(t=>!state.completed.includes(t.id));$('nextTask').innerHTML=t?`<div class="group" style="padding:14px"><span class="pill">${esc(t.group)}</span><h3 style="font-size:17px;margin:12px 0 6px">${esc(t.name)}</h3><p class="sub">${esc(t.desc)}</p><button class="btn" id="goTask">פתחי את המשימה</button></div>`:'<div class="empty">כל המשימות סומנו! הגיע הזמן לסבב בדיקות.</div>';const b=$('goTask');if(b)b.addEventListener('click',()=>{document.querySelector('[data-view="tasks"]').click();$('search').value=t.name;renderTasks();window.scrollTo({top:0,behavior:'smooth'})})}
+function showView(view){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.view===view));$('tasksView').hidden=view!=='tasks';$('sessionsView').hidden=view!=='sessions';$('nextView').hidden=view!=='next';if(view==='sessions')renderHistory();if(view==='next')renderNext()}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+$('search').addEventListener('input',renderTasks);$('statusFilter').addEventListener('change',renderTasks);
+$('projectNotes').value=state.projectNotes;$('projectNotes').addEventListener('input',()=>{state.projectNotes=$('projectNotes').value;save()});$('clearNotes').addEventListener('click',()=>{if(confirm('לנקות את ההערות הכלליות?')){$('projectNotes').value='';state.projectNotes='';save();toast('ההערות נוקו')}});
+$('sessionDate').value=new Date().toLocaleDateString('en-CA');
+$('sessionForm').addEventListener('submit',e=>{e.preventDefault();state.sessions.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),title:$('sessionTitle').value.trim(),date:$('sessionDate').value,done:$('sessionDone').value.trim(),next:$('sessionNext').value.trim()});save();e.target.reset();$('sessionDate').value=new Date().toLocaleDateString('en-CA');renderHistory();toast('מפגש העבודה נשמר 💙')});
+function exportData(){const blob=new Blob([JSON.stringify({version:1,exportedAt:new Date().toISOString(),state},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Basketball-Passport-Backup.json';a.click();URL.revokeObjectURL(url);toast('קובץ הגיבוי נוצר')}
+$('exportBtn').addEventListener('click',exportData);$('exportBtn2').addEventListener('click',exportData);
+$('importBtn').addEventListener('click',()=>$('importFile').click());$('importFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const obj=JSON.parse(await f.text()),incoming=obj.state||obj;if(!Array.isArray(incoming.completed)||!Array.isArray(incoming.sessions))throw Error();if(confirm('ייבוא הגיבוי יחליף את הנתונים הנוכחיים במכשיר הזה. להמשיך?')){state={...fresh(),...incoming};save();$('projectNotes').value=state.projectNotes||'';renderTasks();renderHistory();renderNext();toast('הגיבוי שוחזר בהצלחה')}}catch{toast('הקובץ לא נראה כמו גיבוי תקין')}e.target.value=''});
+renderTasks();updateStats();renderNext();
+initCloud();
+</script>
+</body></html>
